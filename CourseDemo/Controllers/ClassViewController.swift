@@ -12,6 +12,8 @@ class ClassViewController: UIViewController {
     
     let departmans : [String] = ["Computer Engineering", "Electrical Engineering","Department Three","Departmant Four", "Department Five"]
     
+    var homework = true 
+    
     struct lesson {
         let courseName: String
         let courseCode: String
@@ -94,7 +96,7 @@ extension ClassViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.titleLabel.text = lessons[indexPath.row].courseName
         cell.subtitleLabel.text = lessons[indexPath.row].courseCode
-        cell.rightLabel.text = "HomeWork ✓"
+        cell.rightLabel.text = homework == true ? "HomeWork ✓" : "HomeWork X"
         return cell
     }
     
