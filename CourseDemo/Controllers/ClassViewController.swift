@@ -14,10 +14,14 @@ class ClassViewController: UIViewController {
     
     struct lesson {
         let courseName: String
-        let courseCode: String 
+        let courseCode: String
     }
     let lessons : [lesson] = [
-        lesson(
+        lesson(courseName: "Internet Of Things", courseCode: "Ceng465"),
+        lesson(courseName: "Signal and Systems", courseCode: "Ceng307"),
+        lesson(courseName: "Design And Analysis of Algorithm", courseCode: "Ceng303"),
+        lesson(courseName: "Operating System", courseCode: "Ceng305"),
+        lesson(courseName: "Database Management", courseCode: "Ceng303")
     ]
     
     private let classFeedTable = {
@@ -88,13 +92,14 @@ extension ClassViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         
-        cell.textLabel?.text = lessons[indexPath.row]
+        cell.textLabel?.text = lessons[indexPath.row].courseName
+        cell.detailTextLabel?.text = lessons[indexPath.row].courseCode
         return cell
     }
     
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
+        return 150
     }
     
     
