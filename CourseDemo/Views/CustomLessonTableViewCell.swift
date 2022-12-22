@@ -11,10 +11,30 @@ class CustomLessonTableViewCell: UITableViewCell {
 
   
     static let identifier = "CustomLessonTableViewCell"
+    let titleLabel = UILabel()
+    let subtitleLabel = UILabel()
+    let rightLabel = UILabel()
+    
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         contentView.backgroundColor = .link
+        
+        contentView.addSubview(titleLabel)
+        contentView.addSubview(subtitleLabel)
+        contentView.addSubview(rightLabel)
+        
+        configureLayout()
+        
+    }
+    
+    func configureLayout() {
+    
+        let labelPadding: CGFloat = 8
+        
+        titleLabel.frame = CGRect(x: labelPadding, y: labelPadding, width: 200, height: 21)
+        subtitleLabel.frame = CGRect(x: labelPadding, y: titleLabel.frame.maxY, width: 200, height: 21)
+        rightLabel.frame = CGRect(x: contentView.frame.maxX - titleLabel.frame.maxY - labelPadding, y: labelPadding, width: 200, height: 21)
         
     }
     

@@ -92,14 +92,15 @@ extension ClassViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         
-        cell.textLabel?.text = lessons[indexPath.row].courseName
-        cell.detailTextLabel?.text = lessons[indexPath.row].courseCode
+        cell.titleLabel.text = lessons[indexPath.row].courseName
+        cell.subtitleLabel.text = lessons[indexPath.row].courseCode
+        cell.rightLabel.text = "HomeWork ✓"
         return cell
     }
     
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
+        return 100
     }
     
     
