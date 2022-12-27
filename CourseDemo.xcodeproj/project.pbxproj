@@ -15,6 +15,8 @@
 		A839372929531B820025C4B7 /* ClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A839372829531B820025C4B7 /* ClassViewController.swift */; };
 		A839372B29531B920025C4B7 /* HomeworksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A839372A29531B920025C4B7 /* HomeworksViewController.swift */; };
 		A8393732295462B80025C4B7 /* CustomLessonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8393731295462B80025C4B7 /* CustomLessonTableViewCell.swift */; };
+		A83937342954981D0025C4B7 /* HomeworkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83937332954981D0025C4B7 /* HomeworkTableViewCell.swift */; };
+		A83937952959D1370025C4B7 /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83937942959D1370025C4B7 /* VideosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		A839372829531B820025C4B7 /* ClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassViewController.swift; sourceTree = "<group>"; };
 		A839372A29531B920025C4B7 /* HomeworksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworksViewController.swift; sourceTree = "<group>"; };
 		A8393731295462B80025C4B7 /* CustomLessonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLessonTableViewCell.swift; sourceTree = "<group>"; };
+		A83937332954981D0025C4B7 /* HomeworkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkTableViewCell.swift; sourceTree = "<group>"; };
+		A83937942959D1370025C4B7 /* VideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 				A839372629531B760025C4B7 /* FilesViewController.swift */,
 				A839372829531B820025C4B7 /* ClassViewController.swift */,
 				A839372A29531B920025C4B7 /* HomeworksViewController.swift */,
+				A83937942959D1370025C4B7 /* VideosViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -96,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				A8393731295462B80025C4B7 /* CustomLessonTableViewCell.swift */,
+				A83937332954981D0025C4B7 /* HomeworkTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,7 +201,9 @@
 				A839372929531B820025C4B7 /* ClassViewController.swift in Sources */,
 				A8393732295462B80025C4B7 /* CustomLessonTableViewCell.swift in Sources */,
 				A83937152953197E0025C4B7 /* MainTabBarController.swift in Sources */,
+				A83937342954981D0025C4B7 /* HomeworkTableViewCell.swift in Sources */,
 				A83937112953197E0025C4B7 /* AppDelegate.swift in Sources */,
+				A83937952959D1370025C4B7 /* VideosViewController.swift in Sources */,
 				A839372729531B760025C4B7 /* FilesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
